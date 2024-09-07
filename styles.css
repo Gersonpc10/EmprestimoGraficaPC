@@ -76,7 +76,7 @@ button {
     
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: #ee4343;
 }
 table {
     width: 100%;
@@ -84,20 +84,22 @@ table {
     margin-top: 5px;
 }
 th, td {
-    border: 2px solid #ddd;
+    border: 2px solid #acb6ec;
     padding: 8px;
     text-align: right;
 }
 th {
     background-color: #5bc3f3;
+    text-align: center;
+    
 }
-.total {
-    font-weight: bold;
-}
+
 
 .ajusteTabela {
     display: flex;
     justify-content: space-between; /* Ajusta o espaçamento entre as tabelas */
+    font-weight: bold;
+    background-color: rgb(218, 231, 196);
 }
   
 #result, #res {
