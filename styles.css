@@ -6,6 +6,7 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
+    
 }
 input {body {
     font-family: Arial, sans-serif;
@@ -16,6 +17,11 @@ input {body {
     height: 100vh;
     margin: 0;
 }
+padding: 10px;
+margin: 10px 0;
+width: 100%;
+box-sizing: border-box;
+
 
 .container {
     background-color: #fff;
@@ -23,6 +29,7 @@ input {body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    
 }
 
 h1 {
@@ -36,7 +43,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 50%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -57,14 +64,8 @@ button:hover {
     background-color: #0056b3;
 }
 
-#result {
-    margin-top: 20px;
-}
 
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    box-sizing: border-box;
+
 }
 button {
     padding: 10px 20px;
@@ -72,6 +73,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    
 }
 button:hover {
     background-color: #0056b3;
@@ -79,16 +81,26 @@ button:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 8px;
     text-align: right;
 }
 th {
-    background-color: #f2f2f2;
+    background-color: #5bc3f3;
 }
 .total {
     font-weight: bold;
+}
+
+.ajusteTabela {
+    display: flex;
+    justify-content: space-between; /* Ajusta o espaçamento entre as tabelas */
+}
+  
+#result, #res {
+    width: 48%; /* Define a largura de cada tabela */
+    border: 1px solid rgb(194, 4, 4); /* Adiciona uma borda para visualização */
 }
