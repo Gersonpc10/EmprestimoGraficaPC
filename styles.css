@@ -1,35 +1,32 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-image: url('/img/logo-grafica.png');
+    background-size: cover;  /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem na tela */
+    position: relative;
 }
+
+body::after {
+    content: 'Sua Marca d\'Água';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
+    pointer-events: none; /* Evita que a marca d'água interfira com outros elementos */
+    z-index: 1; /* Garante que a marca d'água fique acima do fundo */
+}
+
 .container {
     max-width: 600px;
     margin: auto;
-    
-}
-input {body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-padding: 10px;
-margin: 10px 0;
-width: 100%;
-box-sizing: border-box;
-
-
-.container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    
 }
 
 h1 {
@@ -43,7 +40,7 @@ label {
 }
 
 input {
-    width: 50%;
+    width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -51,49 +48,36 @@ input {
 }
 
 button {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-
-
-}
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    
-}
-button:hover {
-    background-color: #ee4343;
-}
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 5px;
 }
+
 th, td {
     border: 2px solid #acb6ec;
     padding: 8px;
     text-align: right;
 }
+
 th {
     background-color: #5bc3f3;
     text-align: center;
-    
 }
-
 
 .ajusteTabela {
     display: flex;
@@ -101,7 +85,7 @@ th {
     font-weight: bold;
     background-color: rgb(218, 231, 196);
 }
-  
+
 #result, #res {
     width: 48%; /* Define a largura de cada tabela */
     border: 1px solid rgb(194, 4, 4); /* Adiciona uma borda para visualização */
