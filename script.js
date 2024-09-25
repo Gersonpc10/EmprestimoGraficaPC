@@ -1,5 +1,3 @@
-
-
 /* o bloco abaixoi foi removido do html para ser susbtituido pelo prompt
 <label for="adicional">Adicional:</label>
 <input type="number" id="adicional" required>*/
@@ -10,22 +8,18 @@ const listaTaxas = [3.74, 6.14, 6.89, 7.61, 8.35, 9.06, 9.89, 10.59, 11.29, 11.9
 function calcular() {
     const valorEmprestimo = parseFloat(document.getElementById('valor').value);
 //  const adicional = parseFloat(document.getElementById('adicional').value);  retirado para subtituir por um alert
+// Prompt for additional value
+    const adicional = parseFloat(prompt("Digite o valor (R$):"));
     const resultDiv = document.getElementById('result');
     const resDiv = document.getElementById('res');
     
     
-    // Prompt for additional value
-    const adicional = parseFloat(prompt("Digite o valor adicional (R$):"));
-
-
-
-
     if (isNaN(valorEmprestimo) || isNaN(adicional)) {
+        alert('Insira um valor válido');
         resultDiv.innerHTML = '<p>Por favor, insira valores válidos.</p>';
         resDiv.innerHTML = '<p>Por favor, insira valores válidos.</p>';
         return;
     }
-
     
     
     // CALCULO PARA RECEBER O VALOR

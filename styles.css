@@ -1,4 +1,23 @@
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-tercearia: #22d4fd;
+    --cor-hover: #272727;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-tercearia:  #e9760a;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     margin: 20px;
     background-image: url('/img/logo-grafica.png');
@@ -6,6 +25,7 @@ body {
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-position: center; /* Centraliza a imagem na tela */
     position: relative;
+    
     
 }
 
@@ -89,4 +109,22 @@ th {
 #result, #res {
     width: 48%; /* Define a largura de cada tabela */
     border: 1px solid rgb(194, 4, 4); /* Adiciona uma borda para visualização */
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    padding: 1.0rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.0rem;
+    font-family: var(--fonte-secundaria);
+    
+}
+.rodape_contato img{
+    width: 3%;        /* Ajuste da largura */
+    height: auto;        /* Mantém a proporção da imagem */
+    margin-right: 1px;
+    margin-left: 10px;
+    vertical-align: middle; 
+    
 }
